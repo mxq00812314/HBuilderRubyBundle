@@ -248,6 +248,12 @@ snippet 'input_text' do |s|
   s.needApplyReContentAssist = true
 end
 
+snippet 'input_hidden' do |s|
+  s.trigger = 'inhidden'
+  s.expansion = '<input type="hidden" id="$1" value="$2" />'
+  s.needApplyReContentAssist = true
+end
+
 snippet 'input_button' do |s|
   s.trigger = 'inbutton'
   s.expansion = '<input type="button" id="$1" value="$2" />'
